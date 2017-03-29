@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button (click)="onSelectItem('news')" ion-item>
+      News
+    </button>
+    <button (click)="onSelectItem('javascript')" ion-item>
+      Javascript
+    </button>
+    <button (click)="onSelectItem('python')" ion-item>
+      Python
+    </button>
+    <button (click)="presentModal()" ion-item>
+      <ion-icon name="add" item-left></ion-icon>
+        Add
+    </button>
+  </ion-list>
+</ion-content>
